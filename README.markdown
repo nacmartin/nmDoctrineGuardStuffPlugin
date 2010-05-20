@@ -3,7 +3,7 @@ nmDoctrineGuardStuffPlugin
 
 nmDoctrineGuardStuffPlugin is yet another plugin extending sfDoctrineGuardPlugin.
 
-This is the code that I use, know and like. It was initially based on the code of [symfonians](http://symfonians.org).
+This is the code that I use, know and like. It was initially based on the code of [symfonians](http://symfonians.org) by Nicolas Perrault.
 
 New versions may not be backwards compatible.
 
