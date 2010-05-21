@@ -41,6 +41,21 @@ And in `app/APPNAME/config/setting.yml`:
 in `lib/model/doctrine/sfDoctrineGuardPlugin/sfGuardUser.class.php`, make the class inherit from `nmGuardStuffUser`
     class sfGuardUser extends nmGuardStuffUser
 
+add these lines (and more columns if you want to your `schema.yml`:
+    sfGuardUserProfile:
+      inheritance:
+        type: simple
+        extends: sfGuardUserProfileStuff
+      relations:
+        User:
+          class: sfGuardUser
+          foreign: id
+          local: user_id
+          type: one
+          onDelete: cascade
+          foreignType: one
+          foreignAlias: Profile
+
 cross your fingers
 
 License
