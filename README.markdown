@@ -13,12 +13,12 @@ Installation
 If you are not using git in your project:
 
     $ cd /path/to/symfony/project
-    $ git clone git://github.com/nacmartin/nmDoctrineGuardStuffPlugin.git plugins/nmDoctrineGuardStuffPlugin.git
+    $ git clone git://github.com/nacmartin/nmDoctrineGuardStuffPlugin.git plugins/nmDoctrineGuardStuffPlugin
 
 If you are already using git:
 
     $ cd /path/to/symfony/project
-    $ git submodule add git://github.com/nacmartin/nmDoctrineGuardStuffPlugin.git plugins/nmDoctrineGuardStuffPlugin.git
+    $ git submodule add git://github.com/nacmartin/nmDoctrineGuardStuffPlugin.git plugins/nmDoctrineGuardStuffPlugin
     $ git submodule update --init
     $ git commit -a -m "added nmDoctrineGuardStuffPlugin submodule"
 
