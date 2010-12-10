@@ -15,7 +15,7 @@ class sfGuardUserProfileStuffRegisterForm extends PluginsfGuardUserProfileStuffF
         new sfValidatorEmail(),
       ))
     ));
-    $this->validatorSchema->setPostValidator(new sfValidatorDoctrineUnique(array('model'  => 'sfGuardUserProfile', 'column' => 'email')));
+    $this->validatorSchema->setPostValidator(new sfValidatorDoctrineUnique(array('model'  => 'sfGuardUser', 'column' => 'email_address')));
 
     $oDecorator = new sfWidgetFormSchemaFormatterDiv($this->getWidgetSchema());
     $this->getWidgetSchema()->addFormFormatter('div', $oDecorator);

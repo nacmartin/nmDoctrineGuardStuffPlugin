@@ -32,7 +32,7 @@ class ChangePasswordForm extends BasesfGuardUserForm
     $this->validatorSchema->setPostValidator(new sfValidatorAnd(array(
       new sfValidatorSchemaCompare('password', '==', 'password2'),
       new sfValidatorDoctrineUnique(array('model'  => 'sfGuardUser', 'column' => 'username')),
-      new sfValidatorDoctrineUnique(array('model'  => 'sfGuardUser', 'column' => 'email'))
+      new sfValidatorDoctrineUnique(array('model'  => 'sfGuardUser', 'column' => 'email_address'))
     )));
 
     $this->validatorSchema->setPostValidator(new nmGuardStuffChangePasswordValidator(array('user_id' =>$this->getOption('user_id'))));

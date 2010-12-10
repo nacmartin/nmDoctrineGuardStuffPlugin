@@ -38,11 +38,11 @@ class nmGuardStuffActions extends BaseSfGuardAuthActions
             'username' => $user->username,
             'token'    => $user->getProfile()->activation_key
         )))
-        ->setFrom(array('listandcheck@googlemail.com' => 'List & Check'))
-        ->setTo(array($user->getProfile()->email => $user->username));
+        ->setFrom(array(sfConfig::get('app_fromemail') => array(sfConfig::get('app_fromfullname'))))
+        ->setTo(array($user['email_address'] => $user->username));
 
     $this->getMailer()->send($message);
-    $this->getUser()->setFlash('error', 'A confirmation mail has been sent to '. $user->getProfile()->email);
+    $this->getUser()->setFlash('error', 'A confirmation mail has been sent to '. $user['email_address']);
     $this->redirect('@homepage');
   }
 
@@ -77,8 +77,7 @@ class nmGuardStuffActions extends BaseSfGuardAuthActions
       $this->form->bind($request->getParameter($this->form->getName()));
       if ($this->form->isValid()){
         $email = $this->form->getValue('email');
-        $profile = Doctrine::getTable('sfGuardUserProfile')->findOneByEmail($email);
-        $user = $profile->getUser();
+        $user = Doctrine::getTable('sfGuardUser')->findOneByEmailAddress($email);
         $password = substr(md5(rand(100000, 999999)), 0, 8);
         $user->setPasswordForgotten($password);
 
@@ -88,11 +87,11 @@ class nmGuardStuffActions extends BaseSfGuardAuthActions
             'username' => $user->username,
             'password'    => $password
           )))
-          ->setFrom(array('listandcheck@googlemail.com' => 'List & Check'))
-          ->setTo(array($profile->email => $user->username));
+          ->setFrom(array(sfConfig::get('app_fromemail') => array(sfConfig::get('app_fromfullname'))))
+          ->setTo(array($user['email_address'] => $user->username));
 
         $this->getMailer()->send($message);
-        $this->getUser()->setFlash('notice', 'A new password has been sent to '. $profile->email);
+        $this->getUser()->setFlash('notice', 'A new password has been sent to '. $user['email_address']);
         $this->redirect('@homepage');
 
       }else{

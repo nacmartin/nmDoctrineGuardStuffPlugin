@@ -6,11 +6,7 @@ sfGuardUserProfileStuff:
     user_id:
       type: integer
       notnull: true
-    email:
-      type: string(80)
-      notnull: true
-      unique: true
-    new_password: 
+    new_password:
       type: string(128)
     new_password_created_at:
       type: timestamp

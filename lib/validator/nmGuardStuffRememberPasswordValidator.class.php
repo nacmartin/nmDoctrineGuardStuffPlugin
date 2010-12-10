@@ -10,7 +10,7 @@ class nmGuardStuffRememberPasswordValidator extends sfValidatorBase
   {
     $email = $values;
 
-    if ($user = Doctrine::getTable('sfGuardUserProfile')->findOneByEmail($email)){
+    if ($user = Doctrine::getTable('sfGuardUser')->findOneByEmailAddress($email)){
       return $values;
     }
 
