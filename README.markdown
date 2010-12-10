@@ -38,6 +38,12 @@ And in `app/APPNAME/config/setting.yml`:
         login_module:           nmGuardStuff
         login_action:           signin  
 
+In `app/APPNAME/config/app.yml`:
+all:
+  fromemail: "email@example.com"
+  fromfullname: "email to appear in from"
+  webname: "Name of your website"
+
 in `lib/model/doctrine/sfDoctrineGuardPlugin/sfGuardUser.class.php`, make the class inherit from `nmGuardStuffUser`
     class sfGuardUser extends nmGuardStuffUser
 
