@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="sv_SV" target-language="es_ES" date="2009-12-17T14:47:01Z">
+    <header/>
+    <body>
+      <trans-unit id="1">
+        <source>Remember</source>
+        <target>Recordarme</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Bad news</source>
+        <target>Malas noticias</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>We encountered problem activating your account.</source>
+        <target>Hemos tenido problemas activando tu cuenta.</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Dear</source>
+        <target>Estimado</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>To continue the registration, please use the following link:</source>
+        <target>Para continuar con el registro, por favor sigue este enlace:</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Welcome to</source>
+        <target>Bienvenido a</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Change password</source>
+        <target>Cambiar password</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Save changes</source>
+        <target>Guardar cambios</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Somebody (probably you) has requested a new password for his account in</source>
+        <target>Alguien (probablemente tú) ha solicitado una nueva contraseña para esta cuenta de</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Your new password is</source>
+        <target>Tu nueva contraseña es</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Now you should be able to sign in and change your password.</source>
+        <target>Ahora deberías de poder entrar y cambiar tu clave.</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>If you did not request a new password, just ignore this email and continue using your regular password.</source>
+        <target>Si no pediste una nueva contraseña, simplemente ignora este correo y sigue usando tu contraseña habitual.</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Password forgotten?</source>
+        <target>¿Olvidaste tu contraseña?</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Next</source>
+        <target>Siguiente</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Register</source>
+        <target>Registro</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Click here to register your account</source>
+        <target>Clica aquí para registrar tu cuenta</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Why register?</source>
+        <target>¿Por qué registrarse?</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Privacy</source>
+        <target>Privacidad</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>We won't share your email with strangers.</source>
+        <target>No compartiremos tu correo con extraños.</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Already registered</source>
+        <target>Ya registrado</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Do you have an account?</source>
+        <target>¿Tienes una cuenta?</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Sign in!</source>
+        <target>¡Acceder!</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Forgot your password?</source>
+        <target>¿Olvidate tu contraseña?</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Password</source>
+        <target>Contraseña</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Username or E-Mail</source>
+        <target>Nombre de usuario o e-mail</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Enter your email, so we can send you further instructions to change your password.</source>
+        <target>Introduce tu e-mail para que podamos enviarte las instrucciones para cambiar tu clave.</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Your username should contain only alphanumeric, dash, dot or underscore characters, and begin with a letter.</source>
+        <target>Tu nombre de usuario debe contener solo letras, números, guiones, puntos, y comenzar con una letra.</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Please enter a valid email address. An activation link will be sent to this adress.</source>
+        <target>Por favor, introduce una dirección de correo válida. Te enviaremos allí un enlace para activar tu cuenta.</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Your password must be 6 characters length minimum.</source>
+        <target>Tu clave debe tener una longitud mínima de 6 caracteres.</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Please confirm your password for avoiding typos.</source>
+        <target>Por favor, vuelve a introducir tu contraseña para evitar errores.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

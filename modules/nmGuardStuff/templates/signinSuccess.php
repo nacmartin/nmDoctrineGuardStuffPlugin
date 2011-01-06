@@ -5,7 +5,7 @@
     <?php echo $form ?>
   </table>
 
-  <input type="submit" value="<?php echo __('sign in') ?>" />
+  <input type="submit" value="<?php echo __('Sign in!') ?>" />
   <a href="<?php echo url_for('@nm_guard_stuff_password') ?>"><?php echo __('Forgot your password?') ?></a>
 </form>
 
