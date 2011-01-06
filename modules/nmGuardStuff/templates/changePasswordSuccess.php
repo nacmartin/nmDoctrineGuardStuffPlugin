@@ -9,7 +9,7 @@
     </fieldset>
     <p style="text-align:center">
       <?php echo $form['_csrf_token'] ?>
-      <input type="submit" value="<?php echo 'Save changes' ?>" />
+      <input type="submit" value="<?php echo 'Save changes' ?>" class="button"/>
     </p>
   </form>
 </div>

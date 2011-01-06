@@ -7,7 +7,7 @@
     </fieldset>
     <p style="text-align:center">
       <?php echo $form['_csrf_token'] ?>
-      <input type="submit" value="<?php echo 'Next' ?>" />
+      <input type="submit" value="<?php echo 'Next' ?>" class="button" />
     </p>
   </form>
 </div>

@@ -14,6 +14,7 @@ class RegisterForm extends BasesfGuardUserForm
     // widgets
     $this->setWidgets(array(
       'username'  => new sfWidgetFormInput(),
+      'email'     => new sfWidgetFormInput(),
       'password'  => new sfWidgetFormInputPassword(),
       'password2' => new sfWidgetFormInputPassword(),
     ));
@@ -23,13 +24,15 @@ class RegisterForm extends BasesfGuardUserForm
       'username'    => 'Username',
       'password'    => 'Password',
       'password2'   => 'Password again',
+      'email'       => 'e-mail',
     ));
 
     // helps
     $this->widgetSchema->setHelps(array(
-      'username'  => 'Your username should contains only alphanumeric, dash, dot or underscore characters, and begin with a letter.',
+      'username'  => 'Your username should contain only alphanumeric, dash, dot or underscore characters, and begin with a letter.',
       'password'  => 'Your password must be 6 characters length minimum.',
       'password2' => 'Please confirm your password for avoiding typos.',
+      'email'     => 'Please enter a valid email address. An activation link will be sent to this adress.'
     ));
 
     // validators
@@ -40,12 +43,17 @@ class RegisterForm extends BasesfGuardUserForm
       )),
       'password'  => new sfValidatorString(array('min_length' => 6, 'max_length' => 128)),
       'password2' => new sfValidatorString(array('min_length' => 6, 'max_length' => 128)),
+      'email'     => new sfValidatorAnd(array(
+        new sfValidatorString(array('max_length' => 100)),
+        new sfValidatorEmail(),
+      )),
     ));
 
     // post validator
     $this->validatorSchema->setPostValidator(new sfValidatorAnd(array(
       new sfValidatorSchemaCompare('password', '==', 'password2'),
       new sfValidatorDoctrineUnique(array('model'  => 'sfGuardUser', 'column' => 'username')),
+      new sfValidatorDoctrineUnique(array('model'  => 'sfGuardUser', 'column' => 'email_address')),
     )));
 
     $this->widgetSchema->setNameFormat('user[%s]');
@@ -54,9 +62,6 @@ class RegisterForm extends BasesfGuardUserForm
     $this->getWidgetSchema()->addFormFormatter('div', $oDecorator);
     $this->getWidgetSchema()->setFormFormatterName('div'); 
 
-    $profile = $this->object->getProfile();
-    $profileForm = new sfGuardUserProfileStuffRegisterForm($profile);
-    $this->embedForm('profile', $profileForm);
   }
 
 }

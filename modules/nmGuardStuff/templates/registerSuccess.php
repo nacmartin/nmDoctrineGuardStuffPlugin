@@ -4,13 +4,13 @@
       <legend><?php echo 'Register' ?></legend>
       <?php echo $form->renderGlobalErrors() ?>
       <?php echo $form['username']->renderRow() ?>
-      <?php echo $form['profile']['email']->renderRow() ?>
+      <?php echo $form['email']->renderRow() ?>
       <?php echo $form['password']->renderRow() ?>
       <?php echo $form['password2']->renderRow() ?>
     </fieldset>
     <p style="text-align:center">
       <?php echo $form['_csrf_token'] ?>
-      <input type="submit" value="<?php echo 'Click here to register your account' ?>" />
+      <input type="submit" value="<?php echo 'Click here to register your account' ?>" class="button"/>
     </p>
   </form>
 </div>
@@ -21,5 +21,5 @@
   <p>We won't share your email with strangers.</p>
   <h2>Already registered</h2>   
   <p>Do you have an account?</p>
-  <?php echo button_to('Sign in!', '@sf_guard_signin') ?>
+  <?php echo button_to('Sign in!', '@sf_guard_signin', array('class' => 'button')) ?>
 </div>
