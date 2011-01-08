@@ -104,6 +104,10 @@
         <target>Nombre de usuario o e-mail</target>
       </trans-unit>
       <trans-unit id="1">
+        <source>Username</source>
+        <target>Nombre de usuario</target>
+      </trans-unit>
+      <trans-unit id="1">
         <source>Enter your email, so we can send you further instructions to change your password.</source>
         <target>Introduce tu e-mail para que podamos enviarte las instrucciones para cambiar tu clave.</target>
       </trans-unit>
@@ -122,6 +126,18 @@
       <trans-unit id="1">
         <source>Please confirm your password for avoiding typos.</source>
         <target>Por favor, vuelve a introducir tu contraseña para evitar errores.</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Current Password</source>
+        <target>Contraseña actual</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Password</source>
+        <target>Contraseña</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Password again</source>
+        <target>Contraseña (otra vez)</target>
       </trans-unit>
     </body>
   </file>

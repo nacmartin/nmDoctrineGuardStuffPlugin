@@ -14,6 +14,13 @@ class ChangePasswordForm extends BasesfGuardUserForm
       'password2'         => new sfWidgetFormInputPassword(),
     ));
 
+    //labels
+    $this->widgetSchema->setLabels(array(
+      'currentpassword'    => 'Current Password',
+      'password'    => 'Password',
+      'password2'   => 'Password again',
+    ));
+
     // helps
     $this->widgetSchema->setHelps(array(
       'currentpassword'     => 'Enter your current password to confirm that you own this account.',

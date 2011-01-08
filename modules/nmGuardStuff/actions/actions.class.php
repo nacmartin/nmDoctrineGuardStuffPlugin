@@ -33,13 +33,14 @@ class nmGuardStuffActions extends BaseSfGuardAuthActions
     $user->save();
 
     $message = Swift_Message::newInstance()
-        ->setSubject('Activate your List&Check account')
+        ->setSubject($this->getContext()->getI18N()->__('Activate your account'))
         ->setBody($this->getPartial('activationMail', array(
             'username' => $user->username,
             'token'    => $user->getProfile()->activation_key
         )))
         ->setFrom(array(sfConfig::get('app_fromemail') => array(sfConfig::get('app_fromfullname'))))
         ->setTo(array($user['email_address'] => $user->username));
+
 
     $this->getMailer()->send($message);
     $this->getUser()->setFlash('error', 'A confirmation mail has been sent to '. $user['email_address']);

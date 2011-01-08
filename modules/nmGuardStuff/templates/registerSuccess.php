@@ -4,7 +4,7 @@
       <legend><?php echo __('Register') ?></legend>
       <?php echo $form->renderGlobalErrors() ?>
       <?php echo $form['username']->renderRow() ?>
-      <?php echo $form['email']->renderRow() ?>
+      <?php echo $form['email_address']->renderRow() ?>
       <?php echo $form['password']->renderRow() ?>
       <?php echo $form['password2']->renderRow() ?>
     </fieldset>

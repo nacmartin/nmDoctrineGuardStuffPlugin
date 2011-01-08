@@ -14,7 +14,7 @@ class RegisterForm extends BasesfGuardUserForm
     // widgets
     $this->setWidgets(array(
       'username'  => new sfWidgetFormInput(),
-      'email'     => new sfWidgetFormInput(),
+      'email_address'     => new sfWidgetFormInput(),
       'password'  => new sfWidgetFormInputPassword(),
       'password2' => new sfWidgetFormInputPassword(),
     ));
@@ -24,7 +24,7 @@ class RegisterForm extends BasesfGuardUserForm
       'username'    => 'Username',
       'password'    => 'Password',
       'password2'   => 'Password again',
-      'email'       => 'e-mail',
+      'email_address'       => 'e-mail',
     ));
 
     // helps
@@ -32,7 +32,7 @@ class RegisterForm extends BasesfGuardUserForm
       'username'  => 'Your username should contain only alphanumeric, dash, dot or underscore characters, and begin with a letter.',
       'password'  => 'Your password must be 6 characters length minimum.',
       'password2' => 'Please confirm your password for avoiding typos.',
-      'email'     => 'Please enter a valid email address. An activation link will be sent to this adress.'
+      'email_address'     => 'Please enter a valid email address. An activation link will be sent to this adress.'
     ));
 
     // validators
@@ -43,7 +43,7 @@ class RegisterForm extends BasesfGuardUserForm
       )),
       'password'  => new sfValidatorString(array('min_length' => 6, 'max_length' => 128)),
       'password2' => new sfValidatorString(array('min_length' => 6, 'max_length' => 128)),
-      'email'     => new sfValidatorAnd(array(
+      'email_address'     => new sfValidatorAnd(array(
         new sfValidatorString(array('max_length' => 100)),
         new sfValidatorEmail(),
       )),
