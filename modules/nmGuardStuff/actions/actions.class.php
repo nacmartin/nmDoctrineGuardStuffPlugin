@@ -38,7 +38,7 @@ class nmGuardStuffActions extends BaseSfGuardAuthActions
             'username' => $user->username,
             'token'    => $user->getProfile()->activation_key
         )))
-        ->setFrom(array(sfConfig::get('app_fromemail') => array(sfConfig::get('app_fromfullname'))))
+        ->setFrom(array(sfConfig::get('app_fromemail') => sfConfig::get('app_fromfullname')))
         ->setTo(array($user['email_address'] => $user->username));
 
 
