@@ -139,6 +139,58 @@
         <source>Password again</source>
         <target>Contraseña (otra vez)</target>
       </trans-unit>
+      <trans-unit id="1">
+        <source>Required.</source>
+        <target>Requerido</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Invalid.</source>
+        <target>Inválido</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Your username must have at least 3 characters. "%value%" is too short</source>
+        <target>Tu nombre de usuario debe tener al menos tres caracteres. "%value%" es demasiado corto</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Your username must have at most 20 characters. "%value%" is too long</source>
+        <target>Tu nombre de usuario puede tener como mucho 20 caracteres. "%value" es demasiado largo.</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Name "%value%" contains forbidden characters</source>
+        <target>El nombre "%value%" contiene caracteres prohibidos</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Your password must have at least 6 characters</source>
+        <target>Tu contraseña debe tener al menos 6 caracteres</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Password too long</source>
+        <target>La contraseña es demasiado larga</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Email too long</source>
+        <target>Email demasiado largo</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Must be a valid email address</source>
+        <target>Debe ser una dirección de email válida</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Must be the same</source>
+        <target>Deben ser iguales</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>There is already a user con this name</source>
+        <target>Ya hay un usuario con este nombre</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>There is already a user con this email</source>
+        <target>Ya hay un usuario con este email</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>There is no account registered with this address</source>
+        <target>No hay ninguna cuenta con esa dirección de email</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

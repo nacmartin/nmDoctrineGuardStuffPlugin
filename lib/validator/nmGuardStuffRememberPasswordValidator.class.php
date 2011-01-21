@@ -4,7 +4,7 @@ class nmGuardStuffRememberPasswordValidator extends sfValidatorBase
   public function configure($options = array(), $messages = array())
   {
     $this->addOption('email_field', 'email');
-    $this->setMessage('invalid', 'There aren\'t accounts registered with this address.');
+    $this->setMessage('invalid', "There is no account registered with this address");
   }
   public function doClean($values)
   {
