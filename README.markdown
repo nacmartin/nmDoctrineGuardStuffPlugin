@@ -32,6 +32,7 @@ Enable it in your `ProjectConfiguration.class.php`:
     $this->enablePlugins('nmDoctrineGuardStuffPlugin');
 
 And in `app/APPNAME/config/setting.yml`:
+
     all:
       .setting:
         enabled_modules:        [default, sfGuardAuth, nmGuardStuff]
@@ -39,10 +40,11 @@ And in `app/APPNAME/config/setting.yml`:
         login_action:           signin  
 
 In `app/APPNAME/config/app.yml`:
-all:
-  fromemail: "email@example.com"
-  fromfullname: "email to appear in from"
-  webname: "Name of your website"
+
+   all:
+     fromemail: "email@example.com"
+     fromfullname: "email to appear in from"
+     webname: "Name of your website"
 
 in `lib/model/doctrine/sfDoctrineGuardPlugin/sfGuardUser.class.php`, make the class inherit from `nmGuardStuffUser`
     class sfGuardUser extends nmGuardStuffUser

@@ -4,4 +4,4 @@
 
 <?php echo url_for('@nm_guard_stuff_activate?token='.$token, true)?>
 
-<?php echo __("Welcome to")?> <?php echo sfConfig::get('app_setting_webname') ?>!
+<?php echo __("Welcome to")?> <?php echo sfConfig::get('app_webname') ?>!
