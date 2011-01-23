@@ -191,6 +191,34 @@
         <source>There is no account registered with this address</source>
         <target>No hay ninguna cuenta con esa dirección de email</target>
       </trans-unit>
+      <trans-unit id="1">
+        <source>Activate your account</source>
+        <target>Activa tu cuenta</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>A confirmation mail has been sent to </source>
+        <target>Hemos enviado un email de confirmación a </target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>There are no accounts registered with this email address</source>
+        <target>No hay cuentas registradas con esta cuenta de correo</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Sorry, we could not find an user associated with this activation key</source>
+        <target>Lo siento, no hemos encontrado ningún usuario asociado a esta clave de activación</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>Your account has been activated. You can now log in using the username and password you provided at registration time.</source>
+        <target>Tu cuenta ha sido activada. Ahora puedes entrar con el usuario y la contraseña que elegiste</target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>A new password has been sent to </source>
+        <target>Se ha enviado una nueva contraseña a </target>
+      </trans-unit>
+      <trans-unit id="1">
+        <source>This account is already active</source>
+        <target>Esta cuenta ya estaba activada</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

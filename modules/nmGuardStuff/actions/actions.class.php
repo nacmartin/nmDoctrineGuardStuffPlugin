@@ -43,7 +43,7 @@ class nmGuardStuffActions extends BaseSfGuardAuthActions
 
 
     $this->getMailer()->send($message);
-    $this->getUser()->setFlash('error', 'A confirmation mail has been sent to '. $user['email_address']);
+    $this->getUser()->setFlash('error', $this->getContext()->getI18N()->__('A confirmation mail has been sent to '). $user['email_address']);
     $this->redirect('@homepage');
   }
 
@@ -92,11 +92,11 @@ class nmGuardStuffActions extends BaseSfGuardAuthActions
           ->setTo(array($user['email_address'] => $user->username));
 
         $this->getMailer()->send($message);
-        $this->getUser()->setFlash('notice', 'A new password has been sent to '. $user['email_address']);
+        $this->getUser()->setFlash('notice', $this->getContext()->getI18N()->__('A new password has been sent to '). $user['email_address']);
         $this->redirect('@homepage');
 
       }else{
-        $this->getUser()->setFlash('error', 'There are no accounts registered with this email address');
+        $this->getUser()->setFlash('error', $this->getContext()->getI18N()->__('There are no accounts registered with this email address'));
       }
     }
   }
@@ -107,16 +107,16 @@ class nmGuardStuffActions extends BaseSfGuardAuthActions
     $profile = Doctrine::getTable('sfGuardUserProfile')->
       findOneByActivationKey($key);
     if (!$profile){
-      $this->getUser()->setFlash('error', 'Invalid activation key');
+      $this->getUser()->setFlash('error', $this->getContext()->getI18N()->__('Invalid activation key'));
       return sfView::ERROR;
     }
 
     if (!$user = $profile->getUser()){
-      $this->getUser()->setFlash('error', 'Sorry, we could not find an user associated with this activation key');
+      $this->getUser()->setFlash('error', $this->getContext()->getI18N()->__('Sorry, we could not find an user associated with this activation key'));
       return sfView::ERROR;
     }
     if ($user->getIsActive()){
-      $this->getUser()->setFlash('error', 'This account is already active');
+      $this->getUser()->setFlash('error', $this->getContext()->getI18N()->__('This account is already active'));
       return sfView::ERROR;
     }
 
@@ -124,7 +124,7 @@ class nmGuardStuffActions extends BaseSfGuardAuthActions
     $user->save();
     $profile->activation_key= null;
 
-    $this->getUser()->setFlash('notice', 'Your account has been activated. You can now log in using the username and password you provided at registration time.');
+    $this->getUser()->setFlash('notice', $this->getContext()->getI18N()->__('Your account has been activated. You can now log in using the username and password you provided at registration time.'));
     $this->redirect('@nm_guard_stuff_signin');
   }
 
