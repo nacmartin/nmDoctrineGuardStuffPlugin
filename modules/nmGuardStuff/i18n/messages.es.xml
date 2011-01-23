@@ -219,6 +219,10 @@
         <source>This account is already active</source>
         <target>Esta cuenta ya estaba activada</target>
       </trans-unit>
+      <trans-unit id="1">
+        <source>The password is invalid.</source>
+        <target>La contraseña es incorrecta</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
