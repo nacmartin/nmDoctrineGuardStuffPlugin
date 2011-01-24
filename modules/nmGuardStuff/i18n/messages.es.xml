@@ -93,7 +93,7 @@
       </trans-unit>
       <trans-unit id="1">
         <source>Forgot your password?</source>
-        <target>¿Olvidate tu contraseña?</target>
+        <target>¿Olvidaste tu contraseña?</target>
       </trans-unit>
       <trans-unit id="1">
         <source>Password</source>
@@ -222,6 +222,10 @@
       <trans-unit id="1">
         <source>The password is invalid.</source>
         <target>La contraseña es incorrecta</target>
+      </trans-unit>
+      <trans-unit id="1">
+          <source>The username and/or password is invalid.</source>
+        <target>El usuario o la contraseña son incorrectos.</target>
       </trans-unit>
     </body>
   </file>

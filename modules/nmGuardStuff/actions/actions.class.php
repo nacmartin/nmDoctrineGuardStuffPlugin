@@ -88,7 +88,7 @@ class nmGuardStuffActions extends BaseSfGuardAuthActions
             'username' => $user->username,
             'password'    => $password
           )))
-          ->setFrom(array(sfConfig::get('app_fromemail') => array(sfConfig::get('app_fromfullname'))))
+          ->setFrom(array(sfConfig::get('app_fromemail') => sfConfig::get('app_fromfullname')))
           ->setTo(array($user['email_address'] => $user->username));
 
         $this->getMailer()->send($message);
