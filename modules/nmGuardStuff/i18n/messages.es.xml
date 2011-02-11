@@ -5,7 +5,7 @@
     <body>
       <trans-unit id="1">
         <source>Remember</source>
-        <target>Recordarme</target>
+        <target>recordarme</target>
       </trans-unit>
       <trans-unit id="1">
         <source>Bad news</source>
@@ -65,7 +65,7 @@
       </trans-unit>
       <trans-unit id="1">
         <source>Click here to register your account</source>
-        <target>Clica aquí para registrar tu cuenta</target>
+        <target>¡Registrar mi cuenta!</target>
       </trans-unit>
       <trans-unit id="3">
         <source>Why register?</source>
@@ -93,19 +93,19 @@
       </trans-unit>
       <trans-unit id="1">
         <source>Forgot your password?</source>
-        <target>¿Olvidaste tu contraseña?</target>
+        <target>¿Has olvidado tu contraseña?</target>
       </trans-unit>
       <trans-unit id="1">
         <source>Password</source>
-        <target>Contraseña</target>
+        <target>contraseña</target>
       </trans-unit>
       <trans-unit id="1">
         <source>Username or E-Mail</source>
-        <target>Nombre de usuario o e-mail</target>
+        <target>nombre de usuario o e-mail</target>
       </trans-unit>
       <trans-unit id="1">
         <source>Username</source>
-        <target>Nombre de usuario</target>
+        <target>nombre de usuario</target>
       </trans-unit>
       <trans-unit id="1">
         <source>Enter your email, so we can send you further instructions to change your password.</source>
@@ -129,15 +129,15 @@
       </trans-unit>
       <trans-unit id="1">
         <source>Current Password</source>
-        <target>Contraseña actual</target>
+        <target>contraseña actual</target>
       </trans-unit>
       <trans-unit id="1">
         <source>Password</source>
-        <target>Contraseña</target>
+        <target>contraseña</target>
       </trans-unit>
       <trans-unit id="1">
         <source>Password again</source>
-        <target>Contraseña (otra vez)</target>
+        <target>contraseña (otra vez)</target>
       </trans-unit>
       <trans-unit id="1">
         <source>Required.</source>
